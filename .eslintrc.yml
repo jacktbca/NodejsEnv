@@ -6,4 +6,6 @@ extends:
   - airbnb-base
 parserOptions:
   ecmaVersion: 11
-rules: {}
+rules: {
+  no-console: off # disable to check all console calls
+}
