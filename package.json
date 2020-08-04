@@ -10,9 +10,8 @@
   "author": "jack.lo@tbcasoft.com",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^7.5.0",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-plugin-import": "^2.22.0"
+    "eslint": "^7.6.0",
+    "eslint-plugin-react": "^7.20.5"
   },
   "dependencies": {
     "formidable": "^1.2.2"

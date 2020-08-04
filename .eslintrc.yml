@@ -3,9 +3,24 @@ env:
   commonjs: true
   es2020: true
 extends:
-  - airbnb-base
+  - 'eslint:recommended'
+  - 'plugin:react/recommended'
 parserOptions:
+  ecmaFeatures:
+    jsx: true
   ecmaVersion: 11
-rules: {
-  no-console: off # disable to check all console calls
-}
+plugins:
+  - react
+rules:
+  indent:
+    - error
+    - 2
+  linebreak-style:
+    - error
+    - unix
+  quotes:
+    - error
+    - single
+  semi:
+    - error
+    - never
