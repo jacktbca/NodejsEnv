@@ -2,11 +2,12 @@
   "name": "js-test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/index.js",
-    "nodemon": "nodemon src/index.js"
+    "start": "node src/app.js",
+    "nodemon": "nodemon src/app.js",
+    "start-dev": "DEBUG=express:* node src/app.js"
   },
   "author": "jack.lo@tbcasoft.com",
   "license": "ISC",
@@ -16,6 +17,7 @@
     "nodemon": "^2.0.4"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "formidable": "^1.2.2"
   }
 }
