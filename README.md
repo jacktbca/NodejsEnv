@@ -20,9 +20,14 @@ install the [nvm](https://github.com/nvm-sh/nvm). After you install the nvm, you
 - After you install eslint, you should run `eslint --init`.
 
 ## Settings
-- copy the .env.example file to .env file
+copy the .env.example file to .env file
   - cp .env.example .env
-- You could change the PORT for the server in .env file
+  - You could change the PORT for the server in .env file
+Or you could simply execute node instruction by
+  - $ node src/app.js -p {Your PORT}
+  - or $ nodemon src/app.js -p {Your PORT}
+Or you could pass the PORT option on the Dockerfile by
+  - CMD [ "node", "src/app.js", "-p", {YOUR_PORT} ]
 
 ## Run
 - There are two ways you could run the server, the first one is using the npm
