@@ -23,3 +23,10 @@ install the [nvm](https://github.com/nvm-sh/nvm). After you install the nvm, you
 - copy the .env.example file to .env file
   - cp .env.example .env
 - You could change the PORT for the server in .env file
+
+## Run
+- There are two ways you could run the server, the first one is using the npm
+  - $ npm run nodemon
+- The second one is using the Dockerfile
+  - $ docker build --tag nodejs-env:1.0 .
+  - $ docker run --publish 8888:8888 --detach --name nodejs-env nodejs-env:1.0
