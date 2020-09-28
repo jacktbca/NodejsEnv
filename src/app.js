@@ -1,8 +1,11 @@
+require('dotenv').config()
 const express = require('express')
 
 async function start() {
   const app = express()
-  const port = 8888
+  // eslint-disable-next-line no-undef
+  const port = process.env.PORT
+  console.log(`my port is ${port}`)
 
   app.use(express.json())
   app.use(express.urlencoded({ extended: false}))

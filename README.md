@@ -18,3 +18,8 @@ install the [nvm](https://github.com/nvm-sh/nvm). After you install the nvm, you
   - npm install -g eslint
 
 - After you install eslint, you should run `eslint --init`.
+
+## Settings
+- copy the .env.example file to .env file
+  - cp .env.example .env
+- You could change the PORT for the server in .env file
