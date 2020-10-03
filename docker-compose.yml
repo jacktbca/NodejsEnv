@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  app:
+    build: .
+    ports:
+      - 8888:8888
+  database:
+    image: 'mongo'
+    container_name: 'mongo' # give your contatner a name
+    environment:
+      - MONGO_INITDB_DATABASE=db # database name you want to make
+      - MONGO_INITDB_ROOT_USERNAME=root # set your container root username
+      - MONGO_INITDB_ROOT_PASSWORD=secret # set your contatner root password
+    volumes:
+      - ./mongo/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo.js:ro
+      - ./mongo/mongo-volume:/data/db
+    ports:
+      - '27017-27019:27017-27019'
